@@ -10,7 +10,7 @@ main {
   align-items: center;
   gap: 2rem;
   background-color: rgb(235, 235, 235);
-  height: 400px;
+  height: 800px;
 }
 
 .ingredientsList {
@@ -19,6 +19,39 @@ main {
   text-align: left;
   width: 100%;
   max-width: 500px;
+}
+
+section {
+  width: 100%;
+  max-width: 600px;
+}
+
+section h2 {
+  text-align: left;
+  color: black;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.get-recipe-container {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+  gap: 3rem;
+  color: black;
+  background-color: rgb(125, 235, 153);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.get-recipe-container button {
+  height: 3rem;
+  cursor: pointer;
+  background-color: orange;
+  color: black;
+  font-weight: bold;
 }
 
 .searchForm input {
