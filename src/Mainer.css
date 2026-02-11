@@ -22,7 +22,7 @@ main {
 }
 
 .searchForm input {
-  width: 300px;
+  width: 350px;
   min-width: 150px;
   max-width: 400px;
   padding: 0.7rem;
@@ -45,5 +45,5 @@ button {
 
 form {
   display: flex;
-  gap: 10px;
+  gap: 1rem;
 }

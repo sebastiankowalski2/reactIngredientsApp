@@ -8,9 +8,7 @@ export default function Mainer() {
     <li key={ingredient}>{ingredient}</li>
   ))
 
-  function formSubmit(event) {
-    event.preventDefault()
-    const formData = new FormData(event.currentTarget)
+  function addIngredient(formData) {
     const newIngredient = formData.get('ingredient')
     setIngredientsList((prevIngredientsList) => [
       ...prevIngredientsList,
@@ -20,9 +18,9 @@ export default function Mainer() {
 
   return (
     <main>
-      <form className="searchForm" onSubmit={formSubmit}>
+      <form className="searchForm" action={addIngredient}>
         <input type="text" placeholder="e.g. oregano" name="ingredient" />
-        <button type="submit">+ Add Ingredient</button>
+        <button type="submit">+Add Ingredient</button>
       </form>
 
       <ul className="ingredientsList">{ingredientsListItems}</ul>
