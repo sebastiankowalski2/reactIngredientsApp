@@ -1,3 +1,5 @@
+App in react where you can add the ingredients using form, then AI is creating the dish from the added ingredients.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
