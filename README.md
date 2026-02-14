@@ -1,18 +1,72 @@
-App in react where you can add the ingredients using form, then AI is creating the dish from the added ingredients.
+# Chef Claude - AI Recipe Generator
 
-# React + Vite
+A small React app that turns your ingredient list into a suggested recipe using a Hugging Face LLM. Add items, generate a recipe, and render the result as Markdown.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
 
-Currently, two official plugins are available:
+- Add ingredients through a simple form
+- Generate a recipe with an AI model (Hugging Face Inference API)
+- Markdown rendering for clean, readable output
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-## React Compiler
+- React + Vite
+- Hugging Face Inference API
+- react-markdown
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Getting Started
 
-## Expanding the ESLint configuration
+### 1) Install dependencies
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+```
+
+### 2) Configure environment
+
+Create a `.env` file in the project root and add your Hugging Face token:
+
+```dotenv
+VITE_HF_ACCESS_TOKEN=your_hugging_face_access_token
+```
+
+Important: this app runs in the browser, so any `VITE_*` variable is bundled into client code. Treat the token as public and use a personal token with minimal permissions.
+
+### 3) Run locally
+
+```bash
+npm run dev
+```
+
+Open the URL from the terminal (usually http://localhost:5173).
+
+## Scripts
+
+```bash
+npm run dev      # start local dev server
+npm run build    # build for production
+npm run preview  # preview the production build
+npm run lint     # run ESLint
+```
+
+## Notes on Security
+
+This project calls the Hugging Face API directly from the client. That means the access token is visible to anyone who can run the app. If you need a private token, move the API call to a backend or serverless function.
+
+## Project Structure
+
+```
+src/
+	components/
+		Header/
+		IngredientsList/
+		Mainer/
+		Recipe/
+	ai.js
+	App.jsx
+	main.jsx
+```
+
+## License
+
+MIT

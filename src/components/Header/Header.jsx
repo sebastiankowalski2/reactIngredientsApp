@@ -1,4 +1,4 @@
-import chef from './assets/images/chef-claude-icon.png'
+import chef from '../../assets/images/chef-claude-icon.png'
 import './Header.css'
 
 export default function Header() {
