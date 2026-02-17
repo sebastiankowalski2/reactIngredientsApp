@@ -1,7 +1,8 @@
-![screenshot](https://i.imgur.com/2x3OVnr.png)
 # Chef Claude - AI Recipe Generator
 
 A small React app that turns your ingredient list into a suggested recipe using a Hugging Face LLM. Add items, generate a recipe, and render the result as Markdown.
+
+![screenshot](https://i.imgur.com/2x3OVnr.png)
 
 ## Features
 
