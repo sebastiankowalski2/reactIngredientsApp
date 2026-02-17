@@ -9,3 +9,16 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/* Responsive viewport settings */
+@media (max-width: 768px) {
+  #root {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #root {
+    padding: 0 0.25rem;
+  }
+}

@@ -9,3 +9,22 @@
 .suggested-recipe-container ol li {
   margin-bottom: 8px;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .suggested-recipe-container {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .suggested-recipe-container {
+    font-size: 0.95rem;
+    line-height: 22px;
+  }
+
+  .suggested-recipe-container h2 {
+    font-size: 1.1rem;
+  }
+}

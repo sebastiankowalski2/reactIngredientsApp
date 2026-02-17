@@ -19,3 +19,34 @@ h1 {
   color: black;
   font-family: 'Inter', sans-serif;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    height: 90px;
+    gap: 0.5rem;
+  }
+
+  .chefLogo {
+    width: 40px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    height: 80px;
+    gap: 0.5rem;
+  }
+
+  .chefLogo {
+    width: 35px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+}
